@@ -9,4 +9,19 @@ function initMap() {
   const marker1 = new google.maps.Marker({ position: etown, map: map });
   const marker2 = new google.maps.Marker({ position: hutech, map: map });
   const marker3 = new google.maps.Marker({ position: lotteCongHoa, map: map });
+
+  google.maps.event.addListener(marker1, 'click', function() {
+    map.panTo(marker1.getPosition());
+    infowindow.open(map, marker1);
+  });
+
+  google.maps.event.addListener(marker2, 'click', function() {
+    map.panTo(marker2.getPosition());
+    infowindow.open(map, marker2);
+  });
+
+  google.maps.event.addListener(marker3, 'click', function() {
+    map.panTo(marker3.getPosition());
+    infowindow.open(map, marker3);
+  });
 }
