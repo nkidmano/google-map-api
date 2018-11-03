@@ -24,4 +24,19 @@ function initMap() {
     map.panTo(marker3.getPosition());
     infowindow.open(map, marker3);
   });
+
+  document.getElementById('hutech').addEventListener('click', function() {
+    map.panTo(marker2.getPosition());
+    infowindow.open(map, marker2);
+  });
+
+  document.getElementById('lotteCongHoa').addEventListener('click', function() {
+    map.panTo(marker3.getPosition());
+    infowindow.open(map, marker3);
+  });
+
+  document.getElementById('etown').addEventListener('click', function() {
+    map.panTo(marker1.getPosition());
+    infowindow.open(map, marker1);
+  });
 }
